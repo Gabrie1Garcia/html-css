@@ -1,0 +1,27 @@
+.grid-container{
+    row-gap: 2px;
+    column-gap: 2px;
+    display: grid;
+    grid-template:
+    "header header header"
+    "sidebar article article";
+}
+
+.header{
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+}
+
+.article{
+    grid-area: article;
+}
+
+.grid-item{
+    background-color: rgb(42, 165, 63);
+    padding: 10px;
+}
